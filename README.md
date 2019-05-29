@@ -34,6 +34,20 @@ public class SpringRibbonRest {
 	public String fetch() {
 		return "Fetched dari 9085";
 	}
+	
+	@GetMapping("/feignGet/{nomor}")
+	public Map<String, Object> feignGet(@PathVariable("nomor") Long nomor, @RequestParam("nama") String nama) {
+		Map<String, Object> map = new HashMap<String, Object>();
+		map.put("nomor ", nomor);
+		map.put("nama ", nama);
+		return map;
+	}
+	
+	@PostMapping("/feignPost/{nomor}")
+	public Map<String, Object> feignPost(@PathVariable("nomor") Long nomor, @RequestBody Map<String, Object> param) {
+		param.put("Nomor", nomor);
+		return param;
+	}
 }
 ```
 5. Pada tahap server telah selesai. Karene sibbon merupan loadbalancer di sisi client, maka penentuan pemilihan instance server call di lakukan di sisi client</br>
