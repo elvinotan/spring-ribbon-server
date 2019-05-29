@@ -2,8 +2,9 @@
 Mohon jgn rancu dengan kata Server pada project name ini. Spring Ribbon Server hanyalah Client Micro Services biasa yang mendaftarkan dirinya sendiri ke Eureka. Untuk mengetes framwork ribbon, kita akan menjalankan beberapa instance service ini yang di bedakan dengan port
 
 # Dependencies
-Config Client
-Eureka Discovery
+Config Client</br>
+Eureka Discovery</br>
+Web</br>
 
 # How to
 1. Tambahkan @EnableDiscoveryClient pada SpringBootApplicationClass, dengan konfigurasi ini menandakan service ini ingin mendaftar dirinya pakan EurekaServer. Sebenarnya ada @EnableEurekaClient tapi kita tidak gunakan ini krn tidak semua server menggunakan eureka dan untuk amannya kita gunakan @EnableDiscoveryClient
