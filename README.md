@@ -23,5 +23,5 @@ public class SpringEurekaClientApplication {
 java -jar spring-ribbon-server.jar --server.port=9085
 java -jar spring-ribbon-server.jar --server.port=9086
 ```
-Bila kita lihat dashboard pada eureka, harapan kita adalah ada 2 instqance springRibbonServer yang berjalan di port 9085 dan 9086/br>
-4. Pada tahap server telah selesai. Karene sibbon merupan loadbalancer di sisi client, maka penentuan pemilihan instance server call di lakukan di sisi client/br>
+Bila kita lihat dashboard pada eureka, harapan kita adalah ada 2 instqance springRibbonServer yang berjalan di port 9085 dan 9086</br>
+4. Pada tahap server telah selesai. Karene sibbon merupan loadbalancer di sisi client, maka penentuan pemilihan instance server call di lakukan di sisi client</br>
