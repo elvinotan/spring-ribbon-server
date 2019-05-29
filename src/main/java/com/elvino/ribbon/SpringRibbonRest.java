@@ -8,6 +8,6 @@ public class SpringRibbonRest {
 
 	@GetMapping("/fetch")
 	public String fetch() {
-		return "Fetched";
+		return "Fetched dari 9085";
 	}
 }

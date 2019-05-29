@@ -7,4 +7,4 @@ spring:
       uri: http://localhost:9080
       failFast: false
 server:
-  port: 9086
+  port: 9085
